@@ -6,8 +6,8 @@ from queue import Queue
 mh = Adafruit_MotorHAT()
 steer = mh.getMotor(1)
 drive = mh.getMotor(2)
-SPEED = 150
-TURN_AMT = 120
+SPEED = 255
+TURN_AMT = 190
 
 current_drive = 1 # 0 = back, 1 = none, 2 = forward
 current_turn = 1  # 0 = left, 1 = none, 2 = right
