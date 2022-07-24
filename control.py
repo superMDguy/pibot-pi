@@ -1,13 +1,13 @@
-from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor
+from Adafruit_MotorHAT import Adafruit_MotorHAT
 import socket
 from threading import Thread
 from queue import Queue
 
 mh = Adafruit_MotorHAT()
 steer = mh.getMotor(1)
-drive = mh.getMotor(2)
+drive = mh.getMotor(4)
 SPEED = 255
-TURN_AMT = 190
+TURN_AMT = 210
 
 current_drive = 1 # 0 = back, 1 = none, 2 = forward
 current_turn = 1  # 0 = left, 1 = none, 2 = right
